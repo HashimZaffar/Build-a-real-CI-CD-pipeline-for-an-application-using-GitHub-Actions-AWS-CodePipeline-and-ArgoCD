@@ -1,5 +1,7 @@
 # second-project
 
+[![CI Pipeline](https://github.com/YOUR-USERNAME/second-project/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/second-project/actions/workflows/ci.yml)
+
 A beginner-friendly DevOps portfolio project that demonstrates how to build a real CI pipeline for a Python application using GitHub Actions.
 
 ## Project goals
@@ -11,7 +13,8 @@ This project is designed to show practical CI/CD skills, including:
 - code linting with flake8
 - formatting checks with black
 - basic Python security scanning with bandit
-- GitHub Actions workflow automation
+- dependency caching in GitHub Actions
+- artifact creation and upload
 - future Docker image builds and release automation
 
 ## Project structure
@@ -24,6 +27,8 @@ second-project/
 ├── app/
 │   ├── __init__.py
 │   └── main.py
+├── scripts/
+│   └── build_artifact.sh
 ├── tests/
 │   └── test_main.py
 ├── requirements.txt
