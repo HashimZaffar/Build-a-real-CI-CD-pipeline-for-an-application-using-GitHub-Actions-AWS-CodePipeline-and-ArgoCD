@@ -1,7 +1,5 @@
 # second-project
 
-[![CI Pipeline](https://github.com/YOUR-USERNAME/second-project/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/second-project/actions/workflows/ci.yml)
-
 A beginner-friendly DevOps portfolio project that demonstrates how to build a real CI pipeline for a Python application using GitHub Actions.
 
 ## Project goals
