@@ -8,7 +8,7 @@ This project is designed to show practical CI/CD skills, including:
 
 - source control with Git and GitHub
 - automated linting and testing
-- security checks
+- basic security checks
 - artifact packaging
 - Docker image builds
 - semantic versioning and release tagging
@@ -18,10 +18,13 @@ This project is designed to show practical CI/CD skills, including:
 ```text
 second-project/
 ├── .github/
+│   └── workflows/
 ├── app/
+│   ├── __init__.py
 │   └── main.py
 ├── tests/
 │   └── test_main.py
 ├── requirements.txt
+├── requirements-dev.txt
 ├── README.md
 └── .gitignore
