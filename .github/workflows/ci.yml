@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test-and-check:
+  test-build-and-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,9 +17,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements-dev.txt
 
       - name: Install development dependencies
         run: |
@@ -37,3 +39,12 @@ jobs:
 
       - name: Run security scan
         run: bandit -r app
+
+      - name: Build project artifact
+        run: ./scripts/build_artifact.sh
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-app-build
+          path: dist/
