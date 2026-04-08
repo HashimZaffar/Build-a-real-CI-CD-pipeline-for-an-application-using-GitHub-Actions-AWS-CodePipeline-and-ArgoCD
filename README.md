@@ -7,11 +7,12 @@ A beginner-friendly DevOps portfolio project that demonstrates how to build a re
 This project is designed to show practical CI/CD skills, including:
 
 - source control with Git and GitHub
-- automated linting and testing
-- basic security checks
-- artifact packaging
-- Docker image builds
-- semantic versioning and release tagging
+- automated testing with pytest
+- code linting with flake8
+- formatting checks with black
+- basic Python security scanning with bandit
+- GitHub Actions workflow automation
+- future Docker image builds and release automation
 
 ## Project structure
 
@@ -19,6 +20,7 @@ This project is designed to show practical CI/CD skills, including:
 second-project/
 ├── .github/
 │   └── workflows/
+│       └── ci.yml
 ├── app/
 │   ├── __init__.py
 │   └── main.py
