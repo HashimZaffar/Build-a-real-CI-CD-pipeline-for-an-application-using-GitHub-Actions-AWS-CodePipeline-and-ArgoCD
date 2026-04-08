@@ -33,3 +33,10 @@ second-project/
 ├── requirements-dev.txt
 ├── README.md
 └── .gitignore
+
+## Docker
+
+Build the image locally:
+
+```bash
+docker build -t second-project:local .
